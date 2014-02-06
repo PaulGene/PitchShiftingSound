@@ -15,11 +15,11 @@ class Main extends Sprite
 {
 
 	// Private
-	static private var _pitchShiftSpeed:Float;
-	static private var _pitchShiftSound:Sound = null;
-	static private var _pitchShiftPosition:Float;
-	static private var _pitchShiftBytes:ByteArray = null;
-	static private var _pitchShiftSamples:Int;
+	private var _pitchShiftSpeed:Float;
+	private var _pitchShiftSound:Sound = null;
+	private var _pitchShiftPosition:Float;
+	private var _pitchShiftBytes:ByteArray = null;
+	private var _pitchShiftSamples:Int;
 
 	public function new()
 	{
@@ -49,7 +49,7 @@ class Main extends Sprite
 	 * @param	id				If of the sound to play.
 	 * @param	speed			Playback speed. 1 = normal, 0.5 = half, 2 = double... etc.
 	 */
-	static public function playPitchShiftingSound(id:String, speed:Float = 1):Void
+	private function playPitchShiftingSound(id:String, speed:Float = 1):Void
 	{
 		#if flash
 
@@ -76,7 +76,7 @@ class Main extends Sprite
 		_pitchShiftSound.play();
 	}
 
-	static private function onSampleData(event:SampleDataEvent):Void
+	private function onSampleData(event:SampleDataEvent):Void
 	{
 		var data:Float = 0;
 
