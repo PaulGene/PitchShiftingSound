@@ -46,7 +46,7 @@ class Main extends Sprite
 	/**
 	 * Play pitch shifting sound.
 	 *
-	 * @param	id			id of the sound to play.
+	 * @param	id			Id of the sound to play.
 	 * @param	speed			Playback speed. 1 = normal, 0.5 = half, 2 = double... etc.
 	 */
 	private function playPitchShiftingSound(id:String, speed:Float = 1):Void
