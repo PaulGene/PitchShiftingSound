@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<meta title="Pitch Shifting Sound" package="org.openfl.samples.pitchShiftingSound" version="1.0.0" company="OpenFL Technologies" />
+	<app main="Main" path="Export" file="PitchShiftingSound" />
+	
+	<window background="#777777" width="0" height="0" fullscreen="true" resizable="false" borderless="true" if="mobile" />
+	<window background="#777777" width="640" height="480" fullscreen="false" resizable="true" borderless="false" unless="mobile" />
+	
+	<source path="Source" />
+	
+	<haxelib name="openfl" />
+	
+	<assets path="Assets" rename="assets" exclude="*.svg" include="*.dat" unless="flash" />
+	<assets path="Assets" rename="assets" exclude="*.svg" include="*.mp3" if="flash" />
+	<icon path="Assets/openfl.svg" />
+
+</project>
